@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #e9eceb;
+}
+
+#wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    margin: 50px 0;
+    color: #717171;
+    font-size: 5em;
+    font-weight: normal;
+}
+
+button {
+    font-size: 1em;
+    margin-right: 10px;
+    display: block;
+    color: #e9eceb;
+    padding: 10px 25px;
+    background: #9fafaa;
+    border-radius: 20px;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: capitalize;/*first letter will turn capital*/
+}
+#buttons button:last-child {
+    margin-right: 0;
+}
+button:focus {
+    outline: none;
+}
+button:hover{
+    background: #717171;
+}
+button.current {
+    background: #e2610b;
+}
+
+#list {
+    padding-top: 50px;
+    padding-left: 0;/*padding leftなくなって真ん中になる*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;/*dotなくなる*/
+}
+
+#list li {
+    width: 150px;
+    height: 150px;
+}
+
+#list li.red {
+    background: #d2334c;
+}
+#list li.blue {
+    background: #404669;
+}
+#list li.yellow {
+    background: #f7d139;
+}
+#list li.gray {
+    background: #ccc;
+}
